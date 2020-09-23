@@ -2,6 +2,9 @@
   box-sizing: border-box;
 }
 
+@media screen and (min-width: 600px) {
+
+
 body {
   background: #E5E5E5;
   display: grid;
@@ -14,6 +17,8 @@ body {
 
 body .bodysection {
   margin: 60px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   grid-area: centered;
   display: grid;
   grid-template-columns: 50% auto;
@@ -27,7 +32,15 @@ body .bodysection {
                        "takemeup takemeup"
                        "greybottom greybottom";
 }
-
+.a3x2-grid {
+  display: grid;
+  grid-area: a3x2-grid;
+  grid-template-columns: 33% auto 33%;
+  grid-template-rows: 50% auto;
+  grid-template-areas: "box1 box-white box3"
+                       "box4 box5 box6";
+}
+}
 header,
 aside,
 main,
@@ -93,15 +106,6 @@ footer {
 .yellow {
   background: #FAB131;
   grid-area: box-yellow;
-}
-
-.a3x2-grid {
-  display: grid;
-  grid-area: a3x2-grid;
-  grid-template-columns: 33% auto 33%;
-  grid-template-rows: 50% auto;
-  grid-template-areas: "box1 box-white box3"
-                       "box4 box5 box6";
 }
 
 .a3x2-grid div {
